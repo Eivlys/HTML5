@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+li{
+    list-style: none;
+
+}
+#div1{
+    width: 1290px;
+    height: auto;
+    margin: 20px auto;
+}
+ul{
+    width: 430px;
+    float: left;
+}
+.p1{
+    color: aquamarine;
+}
+.p2{
+    font-size: large;
+}
+.p3{
+    font-style: italic;
+}
+.p1.p2{
+    font-style: oblique;
+}
+[title=title]{
+    color: antiquewhite;
+}
+a[href="http://www.baidu.com"]{
+    color: #999999;
+    font-size: larger;
+}
+p strong{
+    color: #c6c6c6;
+}
+h1>strong{
+    color: aqua;
+}
+li+li{
+    color: aqua;
+}

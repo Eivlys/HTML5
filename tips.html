@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="tips.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="div" id="div">
+        <h3>STUDY TEST</h3>
+        <p>AngularJS的理念与<a class="tooltip" id="jquery">JQuery</a>库或其他前端JS框架是不一样的，
+            AngularJS的目标是开发Web应用程序。比如使用jsGen搭建的AngularJS中文社区，
+            一般观众会以为这只是一个普通网站，但实际上它是一个运行在浏览器中的应用程序。
+            当浏览器访问网站时，服务器先反馈一个AngularJS应用的引导页jsgen/static/index.html，
+            该页包含了构建完整AngularJS应用的html、css、js等资源路径，
+            浏览器再依照这些资源路径从服务器获取相关资源，构成完整的AngularJS应用。
+            一旦<a class="tooltip" id="angular">AngularJS</a>应用加载完毕，它就会从网站读取网站信息、文章等数据，或根据用户的请求获取相关数据，
+            将数据插入到AngularJS应用相关位置，并渲染成用户最终看到的网页。
+            组成AngularJS应用的html、css、js等资源都是静态文件，我们可以把这些静态文件独立出来（
+            即jsgen/static目录下的文件），将数据资源相对路径改成服务器的绝对路径，打包放在本地电脑，
+            那么这个本地AngularJS应用依然是可以在浏览器中运行，并与服务器通信获取数据的完整AngularJS应用。
+            说了这么多，只为告诉你一点：AngularJS应用是一个Web程序，而不是从服务器获取的一个一个网页。</p>
+        <p>test test <a class="tooltip" id="test">test</a> test test test test test test test test test </p>
+        <p>join <a class="tooltip" id="us">us</a>!!!!!!!!!!!!!!!!</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

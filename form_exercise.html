@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="form_exercise.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!----------- EMAIL-------------->
+<form>
+    <fieldset>
+        <legend>please input your email</legend>
+        <input name="txtEmail" type="email" class="inputtxt" multiple="true" placeholder="please enter your email"/>
+        <input name="txtURL" type="url" class="inputtxt" required="true"/>
+        <input name="frmSubmit" type="submit" class="inputbtn" value="submit"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>choose your birthday</legend>
+        <input name="txtYear" type="number" class="inputtxt" min="1980" max="2014" step="1" value="1991" />Year
+        <input name="txtMonth" type="number" class="inputtxt" min="1" max="12" step="1" value="10" />Month
+        <input name="txtDay" type="number" class="inputtxt" min="1" max="31" step="1" value="11" />
+        <input name="frmSubmit" type="submit" class="inputbtn" value="submit" />
+    </fieldset>
+
+    <fieldset>
+        <legend>date_type</legend>
+        <input name="txtDate_1" type="date" class="inputtxt"/>
+        <input name="txtDate_2" type="time" class="inputtxt"/>
+    </fieldset>
+    <fieldset>
+        <legend>month_type</legend>
+        <input name="txtDate_3" type="month" class="inputtxt">
+        <input name="txtDate_4" type="week" class="inputtxt">
+    </fieldset>
+    <fieldset>
+        <legend>datetime_type</legend>
+        <input name="txtDate_5" type="datetime" class="inputtxt">
+        <input name="txtDate_6" type="datetime-local" class="inputtxt">
+    </fieldset>
+
+    <fieldset>
+        <legend>input the keyWord</legend>
+        <select name="city">
+            <option value="beijing">beijing</option>
+            <option value="tianjing">tianjing</option>
+            <option value="shanghai">shanghai</option>
+        </select>
+        <input id="txtKeyWord" type="search" class="inputtxt">
+        <input name="frmSubmit" type="submit" class="inputbtn" value="search">
+    </fieldset>
+</form>
+</body>
+</html>

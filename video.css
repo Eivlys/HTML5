@@ -1,0 +1,26 @@
+body,p{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lantinghei SC","Hiragino Sans GB","Microsoft Yehei",Helvatica,Arial,sans-serif;
+
+}
+body{
+    background: silver;
+}
+a{
+    text-decoration: none;
+}
+.cf:after{
+    content: ;
+    display: block;
+    clear: both;
+}
+
+.b{
+    font-weight: bold;
+}
+
+.w-1000{
+    width: 1000px;
+    margin: 0px auto;
+}

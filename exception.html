@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>event</title>
+    <link href="div5.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="mgs()">
+    <form>
+        <input type="text" id="txt">
+        <input type="button" id="btn" onclick="demo()" value="BTN">
+    </form>
+    <script>
+        function demo(){
+            try{
+                var e = document.getElementById("txt").value;
+                if(e==""){
+                    throw "input error:null";
+                }
+            }
+            catch(err){
+                alert(err);
+            }
+        }
+    </script>
+    <button onclick="demo2()">BTN</button>
+    <script>
+        function demo2(){
+            alert("hi");
+        }
+    </script>
+
+    <div class="div" onmouseover="onOver(this)" onmouseout="onOut(this)"></div>
+    <script>
+        function onOver(ooj){
+            ooj.innerHTML="HI";
+        }
+        function onOut(ooj){
+            ooj.innerHTML="SALUT"
+        }
+    </script>
+    <form>
+        <input type="text" onchange="changeDemo()">
+    </form>
+    <script>
+        function changeDemo(){
+            alert("HI change demo");
+        }
+    </script>
+    <form>
+        <input type="text" onselect="changeSelect(this)" onfocus="changeDemo2(this)">
+    </form>
+
+    <script>
+        function changeSelect(bg){
+            bg.style.background="yellow";
+        }
+        function changeDemo2(bg){
+            bg.style.background="green";
+        }
+        function mgs(){
+            alert("loaded")
+        }
+    </script>
+    <img src="img/icon.png" id="imgid">
+    <a id="aid" href="http://www.baidu.com">salue</a>
+    <button onclick="demo3()">BTN</button>
+    <script>
+        function demo3(){
+            document.getElementById("imgid").src="img/img.jpg";
+        }
+    </script>
+
+    <div id="div1">
+        SALUE
+    </div>
+    <button onclick="demo4()">demo4</button>
+    <script>
+        function demo4(){
+            document.getElementById("div1").style.color="green";
+        }
+    </script>
+
+    <p id="pid">SALUT</p>
+    <button id="btn1" >demo5</button>
+    <script>
+        var i = document.getElementById("btn1");
+            i.addEventListener("click",hello);
+            i.removeEventListener("click",hello);
+        i.addEventListener("click",salut);
+        //i.removeEventListener("click",salut);
+            function hello(){
+                alert("HELLO")
+            }
+        function salut(){
+            alert("SALUT")
+        }
+    </script>
+
+    <p name="pn" >Salut</p>
+    <p name="pn" >Salut</p>
+    <p name="pn" >Salut</p>
+    <p name="pn" >Salut</p>
+<script>
+    function getName(){
+        var count =document.getElementsByName("pn");
+        alert(count.length);
+        var p = count[2];
+        p.innerHTML="hello";
+    }
+    getName();
+</script>
+
+<div id="div2">
+    <p id="pid2">origin</p>
+</div>
+
+<script>
+    function addNode(){
+        var div =document.getElementById("div2");
+        var node=document.getElementById("pid2");
+        var newnode=document.createElement("p");
+        newnode.innerHTML="a new node";
+        div.insertBefore(newnode,node);
+    }
+    addNode();
+
+    function getSize(){
+        var width = document.documentElement.offsetWidth;
+        var height = document.documentElement.offsetHeight;
+        alert(width+"-"+height);
+    }
+    getSize();
+</script>
+
+
+</body>
+</html>

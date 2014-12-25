@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>style</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+   <style type="text/css">
+      body{
+         margin: 0px;
+      }
+      p{
+         color: coral;
+      }
+      span{
+         color: darkturquoise;
+      }
+      div#container{
+         width: 100%;
+         height: 900px;
+         background-color: bisque;
+      }
+      div#heading{
+         width: 100%;
+         height: 10%;
+         background-color: aquamarine;
+      }
+      div#content_menu{
+         width: 30%;
+         height: 80%;
+         background-color: darkturquoise;
+         float: left;
+      }
+      div#content_body{
+         width: 70%;
+         height: 80%;
+         background-color: darkgray;
+         float: right;
+      }
+      div#footing{
+         width: 100%;
+         height: 10%;
+         background-color: purple;
+         clear: both;
+      }
+   </style>
+
+</head>
+<body>
+   <a name="font" href="" target="_blank">open local fiel </a><br/>
+   <b>bold</b><br/>
+   <big>big</big><br/>
+   <em>how em it can be</em><br/>
+   <i>how i it can be</i><br/>
+   <small>how small</small><br/>
+   <strong>how strong</strong><br/>
+   how<sub>sub</sub><br/>
+   how<sup>sup</sup><br/>
+   <ins>how ins</ins><br/>
+   <del>how del</del><br/>
+   <h1>TITLE</h1><br/>
+   <p>Tyrions</p>
+   <a style="color: darkturquoise">click on me</a><br/>
+   <a href="http://www.baidu.com">
+      click on me!<img src="img/img.jpg" width="100px" height="100px" alt="pic">
+   </a>
+   <br/>
+
+   <a name="tips">salut</a>
+   <br/>
+   <!--
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   -->
+   <a href="#tips">turn to salut</a>
+   <br/>
+
+   <table border="1">
+      <caption>Important!</caption>
+      <tr>
+         <th>unit 1</th>
+         <th>unit 2</th>
+         <th>unit 3</th>
+         <th>unit 4</th>
+      </tr>
+      <tr>
+         <td>table 1</td>
+         <td>table 2</td>
+         <td>table 3</td>
+         <td>table 4</td>
+      </tr>
+      <tr>
+         <td>table 1</td>
+         <td>table 2</td>
+         <td>table 3</td>
+         <td>table 4</td>
+      </tr>
+   </table>
+   <br/>
+   <table border="1">
+      <tr>
+         <td>
+            <ul>
+               <li>first</li>
+               <li>second</li>
+               <li>third</li>
+            </ul>
+         </td>
+         <td>table 2
+         </td>
+      </tr>
+   </table>
+   <br/>
+   <table class="libertine" border="1" bgcolor="#f5f5dc" background="img/img.jpg" cellpadding="10" cellspacing="10">
+      <tr>
+         <td>table 1</td>
+         <td>table 2</td>
+         <td>table 3</td>
+      </tr>
+      <tr>
+         <td>table 4</td>
+         <td>table 5</td>
+         <td>table 6</td>
+      </tr>
+   </table>
+   <br/>
+   <ul type="square">
+      <li>apple</li>
+          <ul type="disc">
+             <li>iphone</li>
+             <li>mac</li>
+             <li>ipad</li>
+             <li>ipod</li>
+          </ul>
+      <li>orange</li>
+      <li>html</li>
+          <ol>
+             <li>html4</li>
+             <li>html5</li>
+             <li>XHTML</li>
+          </ol>
+      <li>java</li>
+   </ul>
+   <ol start="7">
+      <li>apple</li>
+      <li>orange</li>
+      <li>html</li>
+      <li>java</li>
+   </ol>
+   <br/>
+   <dl>
+      <dt>html5lesson</dt>
+      <dd>first one</dd>
+      <dt>html5lesson</dt>
+      <dd>second one</dd>
+      <dt>html5lesson</dt>
+      <dd>third one</dd>
+   </dl>
+   <br/>
+
+   <!-- BLOCK-->
+   <p>block</p>
+   <h1>BLOCK</h1>
+   <b>BOLD</b>
+   <a>reference</a>
+   <br/>
+   <div id="div">
+      <p>div test</p>
+      <a href="#font">click on me</a>
+   </div>
+   <div id="divspan">
+      <p><span>this is a test for style</span>see what it's like</p>
+   </div>
+   <div id="container">
+      <div id="heading">head</div>
+      <div id="content_menu">content_nemu</div>
+      <div id="content_body">content body</div>
+      <div id="footing">foot</div>
+   </div>
+
+   <!-- table layout-->
+   <table width="100%" height="900px" style="background-color: darkgray">
+      <tr>
+         <td colspan="2" width="100%" height="10%" style="background-color: blueviolet">this is head</td>
+      </tr>
+      <tr>
+         <td width="30%" height="80" style="background-color: darkorange">the left menu
+         <ul>
+            <li>ios</li>
+            <li>android</li>
+            <li>wp</li>
+         </ul>
+         </td>
+         <td width="70%" height="80%" style="background-color: fuchsia">this is the right part</td>
+      </tr>
+      <tr>
+         <td colspan="2" width="100%" height="10%" style="background-color: olivedrab">this is the foot</td>
+      </tr>
+   </table>
+
+   <form>
+      name
+      <input type="text">
+      <br/>
+      password
+      <input type="password">
+      <br/>
+      what your favorite food
+      <br/>
+      apple
+      <input type="checkbox">
+      banana
+      <input type="checkbox">
+      orange
+      <input type="checkbox">
+      <br/>
+      female
+      <input type="radio" name="sex">
+      male
+      <input type="radio" name="sex">
+      <br/>
+      choose your website
+      <br/>
+      <select>
+         <option>www.baidu.com</option>
+         <option>www.goolgle.com</option>
+         <option>evilys.github.io</option>
+      </select>
+      <br/>
+      <input type="button" value="button">
+      <input type="submit" value="yes">
+   </form>
+   <textarea cols="30" rows="30">fill your info</textarea>
+   <!-- form-->
+   <form action="http://localhost/myserver.php" method="post">
+      name:<input type="text" name="name">
+      code:<input type="password" name="password">
+      <br/>
+      <input type="submit" value="submit">
+   </form>
+</body>
+</html>
