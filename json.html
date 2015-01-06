@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script>
+
+        var serializedJSON = '{"question_num": 6, "message": "success", "code": 0, "questions": [12345, 12346, 12347, 12348, 12349, 12350]}';
+        var jsonobject = eval("(" + serializedJSON + ")");
+        var n = jsonobject.question_num - 2;
+
+
+//        $(document).ready(function(){
+//            alert(n)
+//        });
+
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                    $("#p").append(n)
+            });
+
+//
+            var div = document.getElementById("list");
+            var l = jsonobject.questions;
+            for(var i=0;i< n;i++){
+                var a = document.createElement("a");
+                a.href ="http://www.baidu.com";
+                a.className = "list";
+                a.cursor = "pointer";
+                a.margin = "10px";
+                a.appendChild(document.createTextNode(l[i]));
+                div.appendChild(a);
+                a.appendChild(document.createElement("br"))
+
+            }
+
+
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+<button id="btn">click1</button>
+<button id="btn2">click2</button>
+
+<div id="list" height = "200px"></div>
+<iframe id="fr" width="200px" height="200px"></iframe>
+
+
+
+<style type="text/css">
+    .list{
+        color: #0099ff;
+        text-decoration: none;
+    }
+</style>
+
+</body>
+</html>
