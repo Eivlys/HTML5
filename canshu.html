@@ -1,0 +1,25 @@
+<html> 
+<head> 
+<script type="text/javascript" src="jquery-1.11.1.min.js"script> 
+
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+var bindText = 'AAA'; 
+for(var i=0;i<2;i++) { 
+$("#b" + i).bind("click", {'bindText':bindText + i}, function(e){ 
+butClick(e); 
+}); 
+} 
+}); 
+
+function butClick(e) { 
+alert(e.data.bindText); 
+} 
+</script> 
+</head> 
+<meta charset="UTF-8">
+<body> 
+<button id="b0">请点击这里0</button> 
+<button id="b1">请点击这里1</button> 
+</body> 
+</html>
